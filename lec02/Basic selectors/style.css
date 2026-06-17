@@ -1,0 +1,29 @@
+ /* element selector */
+ p{
+    color: darkcyan;
+}
+/* id selector */
+#opo{
+    color: blueviolet;
+}
+/* this shows brown other than id waala bcz dono p ki priority same h
+so it follows wahi flow waala rule */
+p{
+    color: brown;
+}
+/* class selector */
+.yuppo{
+    color: darkorange;
+}
+/* universal selector  selects all tags priority sbse km hogi */
+*{
+    margin: 0;
+    padding: 0;
+    color: green;
+}
+/* attribute selctor selects the attribute */
+a[href="https://www.netflix.com/browse"]{
+    color: red;
+}
+/* priority order */
+/*id selectors >  attribute selector >  class selectors > element selectors > universal selectors */
