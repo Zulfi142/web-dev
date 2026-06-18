@@ -1,0 +1,49 @@
+p{
+    color: red;
+}
+/* descendant selector selects the element which is descendant of the parent element */
+div p{
+    color: blue;
+}
+.abc p{
+    color: green;
+}
+p.para{
+    color: brown;
+}
+/* child selector selects the direct child of the parent element */
+/* ul>li{
+    color: purple;
+} */
+/* ul li{
+    color: orange;
+} */
+
+/* immidiate sibling selector */
+/* li+li{
+    color: red;
+} */
+/* /* .fav +li{
+    color: purple;
+} 
+li.fav +li{
+    color: rgb(111, 0, 255);// more priority than .fav +li bcz it has more specificity
+} */ 
+/* general sibling selector */
+/* .fav ~ li{
+    color: aqua;
+} */
+ /* ul li{
+    color: rgb(0, 255, 0);
+ } */
+ /* ul li:first-child{
+    color: brown;
+ }
+ul li:last-child{
+    color: rgb(0, 255, 255);
+} 
+
+/* for selction of odd and even child we use nth-child selector */
+ul li:nth-child(2n+1){
+    color: rgb(255, 0, 255);
+}

@@ -1,0 +1,32 @@
+.container{
+    /* height: 100px;
+    width: 500px; */
+    background-color: aqua;
+    height: 50vh;
+    width: 75vw;
+    overflow: auto;
+    overflow: hidden;
+}
+div.child{
+background-color: brown;
+height: 50%;
+width: 75%;
+}
+.child p{
+    background-color: aliceblue;
+    font-size: 1.2em;
+    /* font-size: 2.5rem; */
+    overflow: auto;
+    overflow: hidden;
+
+}
+.child abc{
+    font-size: 2.5rem;
+    background-color: beige;
+}
+html{
+    font-size: 20px;
+}
+.child{
+    font-size: 14px;
+}

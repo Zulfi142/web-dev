@@ -1,0 +1,29 @@
+.container{
+    height: 150vh;
+    width: 80vw;
+    border: 5px solid blueviolet;
+}
+.child{
+    height: 50px;
+    width: 50px;
+    border: 5px solid green;
+}
+.child1{
+    position: relative;
+    left: 200px;
+    top: 50px;
+    /* ya to left use kroge ya right and bottom aur top mein se ek use kroge */
+}
+.child2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.child3{
+    position: fixed;
+    top: 40 vh;
+}
+.child4{
+    position: sticky;
+    top: 0;
+}

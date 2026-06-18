@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 200px;
+    width: 200px;
+    border: 5px solid green;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom:100px;
+    /* top right bottom left */
+    padding: 40px 30px 100px 20px;
+    /* top/bottom both and right/left both */
+    padding: 20px 40px;
+    /* one for all sides */
+    padding: 30px;
+    /* same for margin all things are same */
+
+}
