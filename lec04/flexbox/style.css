@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 2px solid red;
+    height: 80vh;
+    width: 80vw;
+    display: flex; 
+    /* parent element pe flex lagayenge hamesha taaki sb allign ho jaayein 97% of the time parent
+    pe hi property lagegi by default flex-direction: row hota h */
+    /* flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+    /* justify used to work on main axis x axis */
+    /* justify-content: center;
+    justify-content: flex-start;//default
+    justify-content: flex-end; */
+    /* ye sirf shift karega thatswhy it is 12345 */
+    /* justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+    /* space evenly equal spaces lega */
+    /* align-items used to work on cross axis y axis */
+    /* align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+     */
+     /* align-items: stretch; by default stretch */
+     /* align-items: first baseline;
+     align-items: last baseline; */
+     /* flex properties */
+     /* flex-wrap: nowrap;//by default */
+     /* flex-wrap: wrap; */
+     /* flex-wrap: wrap-reverse; */
+     /* gap property */
+     /* gap: 10px 30px; */
+     /* col row */
+     /* flex-wrap: wrap; */
+     
+
+
+     
+
+}
+.child{
+    height: 50px;
+    width: 100px;
+    border: 2px solid green;
+}
+/* properties jo childeren pe lagegi */
+
+.child2{
+    order: 2;
+    flex-grow: 0.5;
+}
+
+.child3{
+    order: 0;
+    order: -3;
+    flex-shrink: 4;
+    
+}
+
+
