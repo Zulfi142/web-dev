@@ -1,0 +1,23 @@
+.container{
+    height: 80vh;
+    width: 80vw;
+    /* border: 2px solid green; */
+    margin: 50px auto;
+    /*pehla waala 50px top&bottom ke liye hai aur ye used for centering for left and right */
+    background-image: url(https://plus.unsplash.com/premium_photo-1673306778968-5aab577a7365?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 95% time we use cover 
+    cover use hoga width ko cover krne ke liye aur contain use hoga height cover krne ke liye */
+    background-position: 0px -50px;
+    /* pehla x axis hai aur doosra y axis hai */
+    color: blue;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
