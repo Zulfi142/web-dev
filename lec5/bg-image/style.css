@@ -12,7 +12,7 @@
     cover use hoga width ko cover krne ke liye aur contain use hoga height cover krne ke liye */
     background-position: 0px -50px;
     /* pehla x axis hai aur doosra y axis hai */
-    color: blue;
+    color:black;
     font-size: 2em;
     display: flex;
     justify-content: center;

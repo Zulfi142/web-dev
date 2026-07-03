@@ -29,8 +29,8 @@ p.para{
 li.fav +li{
     color: rgb(111, 0, 255);// more priority than .fav +li bcz it has more specificity
 } */ 
-/* general sibling selector */
-/* .fav ~ li{
+/* general sibling selector
+.fav ~ li{
     color: aqua;
 } */
  /* ul li{
@@ -47,3 +47,4 @@ ul li:last-child{
 ul li:nth-child(2n+1){
     color: rgb(255, 0, 255);
 }
+

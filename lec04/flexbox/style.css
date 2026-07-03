@@ -10,8 +10,8 @@
     /* parent element pe flex lagayenge hamesha taaki sb allign ho jaayein 97% of the time parent
     pe hi property lagegi by default flex-direction: row hota h */
     /* flex-direction: row;
-    flex-direction: row-reverse;
-    flex-direction: column;
+    flex-direction: row-reverse; */
+    /* flex-direction: column;
     flex-direction: column-reverse; */
     /* justify used to work on main axis x axis */
     /* justify-content: center;
@@ -53,13 +53,15 @@
 
 .child2{
     order: 2;
+    /* order by deafault zero hoga sbka aur jiske order jis hisaab se hoga use. wesi place milegi */
     flex-grow: 0.5;
+    
 }
 
 .child3{
-    order: 0;
+    /* order: 0; */
     order: -3;
-    flex-shrink: 4;
+    /* flex-shrink: 4; */
     
 }
 
