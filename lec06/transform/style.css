@@ -1,0 +1,33 @@
+.box{
+    border: 2px solid black;
+    height: 350px;
+    width: 200px;
+    margin:200px auto ;
+    transition-duration: 2s;
+    /* transition-delay: 1s; */
+    /* margin auto works horizontally only in x-axis */
+    transform-style: preserve-3d;
+}
+.box:hover{
+    background-color: aquamarine;
+    /* transform: translateX(200px);
+    transform: translateY(200px);
+    transform: translateZ(200px); */
+    /* translate is by default in x axis */
+    transform: translate(100px,-200px);
+    /* transform: rotateX(90deg); */
+    transform: rotateY(180deg);
+    
+    /* transform: rotateZ(360deg); */
+    /* x mein height km hogi aur y mein width km hogi aur z mein depth km hogi by default z hogi*/
+    /* transform: scaleX(1.5);
+    scale by default x axis mein hota h */
+    /* transform: skewX(40deg);  */
+    /* default skew is on x axis */
+    /* transform: translate(100px,-200px) rotateZ(360deg) scaleX(1.5) skewX(40deg); */
+    
+   
+
+
+    
+}
