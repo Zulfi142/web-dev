@@ -1,0 +1,73 @@
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    position: relative;
+    animation-name: pos;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation-direction: alternate; */
+     animation-fill-mode: forwards;
+     /* animation 100% waali state mein hoga  */
+     /* animation-fill-mode: backwards; */
+     /* animation start hone se pehle waali state mein hoga  */
+     /* animation-delay: 1s; */
+     /* animation-direction: alternate-reverse; */
+     /* animation-direction: reverse; */
+    /* animation-timing-function: linear; */
+    /* animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out; */
+    /* in se start mein halke out se end mein halke aur in-out ke andar start hoga dheere phir normal ho jaayega 
+    phir end mein dheere ho jaayega*/
+    animation-timing-function: cubic-bezier(1, 0.31, 0, 0.76);
+
+    
+
+}
+@keyframes changepos{
+    from{
+        left: 0;
+    }
+    to{
+        left: 200px;
+        
+    }
+}
+@keyframes pos{
+    0%{
+        background-color: aqua;
+        top: 0;
+        left: 0;
+        border-radius: 0%;
+
+    }
+    25%{
+        background-color: red;
+        top: 0;
+        left: 250px;
+        border-radius: 50%;
+        transform: rotate(135deg);
+    }
+    50%{
+        background-color: bisque;
+        top: 250px;
+        left: 250px;
+        border-radius: 0%;
+
+    }
+    75%{
+        background-color: brown;
+        top: 250px;
+        left: 0px;
+         border-radius: 50%;
+         transform: rotate(-135deg);
+    }
+    100%{
+        background-color: blueviolet;
+        top:0;
+        left: 0;
+        border-radius: 0%;
+    }
+}
