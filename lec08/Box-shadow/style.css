@@ -1,0 +1,10 @@
+.box{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 50px auto ;
+    box-shadow: 5px 10px 5px black ,
+               -5px -10px 5px black;
+          /* x-axis y-axis blurr color */
+          
+}

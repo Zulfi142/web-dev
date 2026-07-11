@@ -102,5 +102,23 @@ footer a{
     padding: 10px 40px;
     border-radius: 60px;
 }
+@media (max-width:780px){
+    .child{
+        display: none;
+    }
+    
+}
+@media (max-width:555px){
+    #nu{
+        display: none;
+    }
+}
+@media (max-width:1200px){
+    
+    .image{
+        display: none;
+    }
+}
+
 
 

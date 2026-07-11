@@ -1,0 +1,36 @@
+.container{
+    height: 300px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 50px auto;
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+
+}
+ .container:hover{
+    background-color: aquamarine;
+    transform: rotateY(180deg);
+ }
+ body{
+    perspective: 1000px;
+ }
+ .sideA{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://png.pngtree.com/png-vector/20191121/ourmid/pngtree-blue-bird-vector-or-color-illustration-png-image_2013004.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+ }
+ .sideA , .sideB{
+    backface-visibility: hidden; 
+    color: white;
+
+ }
+ .sideB{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+    color: black;
+ }
