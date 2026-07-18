@@ -28,4 +28,10 @@ console.log(arr[3])
 for (let item of arr){
     console.log(item);
 }
+//use to iterate the array
 //for off loop
+//array pe for in bhi lg jaayega for in se index number aajayega;
+for(let item in arr){
+    console.log(item);
+    console.log(arr[item]);
+}

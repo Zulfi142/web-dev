@@ -22,3 +22,13 @@ console.log(temp);
  let filname=file.split(".")[0]+".zip";
  //zero means take the first part
  console.log(filname);
+
+ let w="hello";
+ let z="world";
+ let n=w+" "+z;
+ console.log(n);
+ console.log(3+4+"temp");
+ console.log(3+4+"4");
+ console.log(3+4*"4");
+ console.log(4+3*"6"+3-"12");//- * / in mein js string ko as a number treat krega..
+ 
