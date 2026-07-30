@@ -32,6 +32,6 @@ for (let item of arr){
 //for off loop
 //array pe for in bhi lg jaayega for in se index number aajayega;
 for(let item in arr){
-    console.log(item);
-    console.log(arr[item]);
+    console.log(item);//index
+    console.log(arr[item]);//value
 }

@@ -6,7 +6,7 @@ var c=`"hello" 'jii' `;
 console.log(c);
 let money =50;
 // let temp="i have money rs"
-let temp=`i have ${money} rs`;
+let temp=`i have ${money} rs`;//imp
 console.log(temp);
  var str="This is a string";
  console.log(str);
@@ -15,7 +15,7 @@ console.log(temp);
  let q=str.replaceAll("is","abc");
  console.log(q);
  let y=str.split("is");
-//  retuen a array 
+//  return a array 
  console.log(y);
 
  let file="abc.jpeg";
