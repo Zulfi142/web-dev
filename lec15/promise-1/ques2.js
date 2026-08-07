@@ -1,14 +1,14 @@
 console.log("START");
 setTimeout(()=>{
     let pr = Promise.resolve("A")
-    console.log("Hello");
     pr.then((data)=>{console.log(data)})
+    console.log("Hello");
 },5000)
 
-setTimeout(()=>{
+setTimeout(()=>{//is block ko bhi same treatment milega jese poori file ko milta h
     let pr = Promise.resolve("B")
+     pr.then((data)=>{console.log(data)})
     console.log("World");
-    pr.then((data)=>{console.log(data)})
 },0)
 
 let x =Promise.resolve("C");
