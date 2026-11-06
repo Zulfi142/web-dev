@@ -1,0 +1,33 @@
+<%- layout("layout/boilerplate.ejs") %>
+
+<div style="width: 50vw; margin: auto;">
+    <form action="/login" method="post">
+
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username">
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="showPassword">
+            <label class="form-check-label" for="showPassword">
+                Show Password
+            </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+</div>
+
+<script>
+    document.getElementById("showPassword").addEventListener("change", function () {
+        let password = document.getElementById("password");
+        password.type = this.checked ? "text" : "password";//toggle krwa raha type text aur passsword ko by clicking;
+    });
+</script>

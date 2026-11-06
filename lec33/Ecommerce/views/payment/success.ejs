@@ -1,0 +1,10 @@
+<%- layout("layout/boilerplate.ejs") %>
+
+<div class="container mt-5 text-center">
+    <h2 class="text-success">✅ Payment Successful!</h2>
+    <p>Order ID: <strong><%= order.order_id %></strong></p>
+    <p>Amount Paid: <strong>₹<%= order.order_amount %></strong></p>
+    <p>Payment Status: <strong><%= order.order_status %></strong></p>
+    <a href="/orders" class="btn btn-primary mt-3">View My Orders</a>
+</div>
+

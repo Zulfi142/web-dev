@@ -1,0 +1,49 @@
+<%- layout("layout/boilerplate.ejs") %>
+<div class="container mt-4">
+        <h2>My Orders</h2>
+
+        <% if (orders.length === 0) { %>
+            <h4>You have not placed any orders yet!</h4>
+        <% } else { %>
+
+            <% for (let order of orders) { %>
+                <div class="row border rounded p-3 mt-3">
+
+                    <div class="col-6">
+                        <h5>Order No: <%= order.orderNumber %></h5>
+                        <p>Order Date: <%= order.createdAt.toDateString() %></p>
+                        <p>Order Status: <%= order.orderStatus %></p>
+                        <p>Payment Status: <%= order.paymentStatus %></p>
+                    </div>
+
+                    <div class="col-6">
+                        <h5>Order Items</h5>
+
+                        <% for (let item of order.items) { %>
+                            <div class="cartItem d-flex align-items-center gap-3 mb-3">
+
+                                <img
+                                    src="<%= item.productId.image %>"
+                                    alt="Product"
+                                    width="80"
+                                >
+
+                                <div>
+                                    <h6><%= item.productId.name %></h6>
+                                    <p>Price: $<%= item.price %></p>
+                                    <p>Quantity: <%= item.quantity %></p>
+                                </div>
+
+                            </div>
+                        <% } %>
+
+                        <h5>Total Price: $<%= order.amount %></h5>
+                    </div>
+
+                </div>
+            <% } %>
+
+        <% } %>
+
+        <a href="/" class="btn btn-primary mt-3">Continue Shopping</a>
+    </div>

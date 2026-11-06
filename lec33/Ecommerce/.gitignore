@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment Variables & Secrets (Prevents GitHub Secret Scanning Errors)
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE & Editor folders
+.vscode/
+.idea/
+

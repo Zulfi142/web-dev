@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <h2>Redirecting to payment page ...</h2>
+
+    <!-- Cashfree JS SDK -->
+    <script src="https://sdk.cashfree.com/js/v3/cashfree.js"></script>
+
+    <script>
+        // Initialize Cashfree in sandbox mode
+        const cashfree = Cashfree({ mode: "sandbox" });
+
+        // Open the payment page automatically
+        cashfree.checkout({
+            paymentSessionId: `<%= paymentSessionId %>`,
+            redirectTarget: '_self'  // redirect in same tab
+        });
+    </script>
+</body>
+</html>
+
